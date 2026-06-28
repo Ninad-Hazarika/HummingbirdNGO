@@ -1,0 +1,161 @@
+.philosophy-section {
+  padding: 80px 0;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.philosophy-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  position: relative;
+}
+
+.vis-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.vis-card-team {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 240px;
+}
+
+.vis-card-team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vis-card-dark {
+  background: #091e2a;
+  color: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+.vis-card-dark .heart-icon {
+  font-size: 1.5rem;
+  color: #f43f5e;
+}
+
+.vis-card-dark .impact-num {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.vis-card-blue {
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+  color: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.vis-card-blue .efficiency-num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.vis-card-blue .efficiency-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.vis-card-solar {
+  grid-column: 2;
+  grid-row: 2;
+  height: 140px;
+}
+
+.vis-card-solar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.philosophy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.philosophy-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.philosophy-title .highlight-blue {
+  color: #0284c7;
+}
+
+.philosophy-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-icon-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #091e2a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
