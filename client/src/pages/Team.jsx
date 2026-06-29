@@ -1,3 +1,4 @@
+import TeamOrgChart from "../components/TeamOrgChart";
 import "./Team.css";
 
 function Team() {
@@ -133,6 +134,9 @@ function Team() {
             ))}
           </div>
         </div>
+
+        {/* Interactive Organizational Structure Chart */}
+        <TeamOrgChart />
 
         {/* Join the Collective */}
         <div className="join-collective-card">
