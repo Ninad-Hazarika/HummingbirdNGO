@@ -7,46 +7,48 @@ function RegionalCircles() {
   const directors = [
     {
       id: 1,
-      name: "Partha",
+      region: "Guwahati",
+      officer: "Nitopal Mazumdar",
+      officerRole: "Officer",
+      officerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      astOfficer: "Pranay",
+      astOfficerRole: "Assistant Officer",
+      astOfficerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
       role: "Tech Cell",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-      bio: "With 20 years in international development, Elena crafts our overarching operational framework to ensure scalability and critical growth.",
-      path: "/team/tech_cell",
+      regionImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      path: "/team/regional_circles/guwahati",
     },
     {
       id: 2,
-      name: "Pranjyoti",
+      region: "Barpeta",
+      officer: "Jitisha Sannyashi",
+      officerRole: "Officer",
+      officerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      astOfficer: "Riya",
+      astOfficerRole: "Assistant Officer",
+      astOfficerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
       role: "Program & Research wing",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
-      bio: "A pioneer in blockchain-for-good, Marcus leads our technical division, integrating transparent aid tracking into every project.",
-      path: "/team/program_research_wing",
+      regionImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+      path: "/team/regional_circles/barpeta",
     },
     {
       id: 3,
-      name: "Neelav",
-      role: "Media & PR Cell",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-      bio: "Sarah bridges the gap between private capital and humanitarian need, building alliances that multiply our reach across five continents.",
-      path: "/team/media_pr_cell",
+      region: "Barpeta Road",
+      officer: "Vacant",
+      officerRole: "Officer",
+      officerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      astOfficer: "Vacant",
+      astOfficerRole: "Assistant Officer",
+      astOfficerImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      regionImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      path: "/team/regional_circles/barpeta_road",
     },
   ];
 
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.container}>
-        {/* Hero Header */}
-        <div className={styles.teamHero}>
-          <h1 className={styles.teamTitle}>
-            Driven by <span className={styles.highlightBlueItalic}>the Best.</span>
-          </h1>
-          <p className={styles.teamDesc}>
-            Meet the minds and hearts fueling global change. From field strategists to
-            visionary architects, our collective power is rooted in radical empathy and
-            technical precision.
-          </p>
-        </div>
-
-
+    
         {/* Strategic Visionaries */}
         <div className={styles.teamSec}>
           <div className={styles.teamSectionRow}>
@@ -65,15 +67,25 @@ function RegionalCircles() {
               <div key={member.id} className={styles.visionaryCard} onClick={()=> navigate(member.path || "/")}>
                 <div>
                   <div className={styles.avatarRingWrapper} onClick={()=> navigate(member.path || "/")}>
-                    <img src={member.image} alt={member.name} />
+                    <img src={member.regionImage} alt={member.region} />
                   </div>
-                  <h3 className={styles.visName}>{member.name}</h3>
-                  <p className={styles.visRole}>{member.role}</p>
-                  <p className={styles.visBio}>{member.bio}</p>
+                  <h3 className={styles.visName}>{member.region}</h3>
                 </div>
                 <div className={styles.visSocials}>
-                  <span>🌐</span>
-                  <span>✉️</span>
+                </div>
+                <div className={styles.visKeep1}>
+                  <div className={styles.RingWrapper1}>
+                    <img src={member.officerImage} alt={member.officer} />
+                  </div>
+                  <h3 className={styles.Name1}>{member.officer}</h3>
+                  <p className={styles.Role1}>{member.officerRole}</p>
+                </div>
+                <div className={styles.visKeep2}>
+                  <div className={styles.RingWrapper2}>
+                    <img src={member.astOfficerImage} alt={member.astOfficer} />
+                  </div>
+                  <h3 className={styles.Name2}>{member.astOfficer}</h3>
+                  <p className={styles.Role2}>{member.astOfficerRole}</p>
                 </div>
               </div>
             ))}

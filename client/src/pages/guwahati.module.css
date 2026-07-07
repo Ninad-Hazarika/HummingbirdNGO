@@ -1,0 +1,155 @@
+.teamSectionRow{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.teamSecTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  transform: translateY(20%);
+}
+
+.teamSecSubtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transform: translateY(20%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visionariesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 28px;
+  margin-bottom: 80px;
+  
+}
+.visionaryCard {
+  position: relative;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  height: 75vh;
+  padding: 36px 28px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.avatarRingWrapper img{
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    transform: translateX(-135%);
+    border-radius: 12px;
+}
+.visQuote{
+    position: absolute;
+    width: 30%;
+    font-style: italic;
+    font-size: 0.9rem;
+    transform: translateX(-150%) translateY(50vh);
+    color: white;
+}
+.visRole{
+    position: absolute;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 2.3rem;
+    right: 0;
+    top:0;
+    color: white; ;
+    background: darkblue;
+    border-radius: 0 var(--radius-md) 0 var(--radius-md);
+}
+.visName{
+    left: 0;
+    position: absolute;
+    font-size: 1.5rem;
+    transform: translateY(2vh);
+    color: var(--text-main);
+    
+}
+.visAge{
+    left: 0;
+    margin-left: 5%;
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(7vh);
+    color: var(--text-muted);
+}
+.visServingSince{
+    left: 0;
+    margin-left: 5%;
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(12vh);
+    color: var(--text-muted);
+}
+.visAchievements{
+    left: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(48vh);
+    color: var(--text-main);
+}
+    .achievementList{
+        font-size: 1.2rem;
+        transform: translateX(25%); 
+    }
+.visQualifications{
+    left: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(35vh);
+    color: var(--text-main);
+}
+    .qualificationList{
+        font-size: 1.2rem;
+        transform: translateX(25%);
+    }
+
+.visKeep {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-20%) translateY(-2vh);
+}
+.visBio1 {
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: left;
+    transform: translateY(17vh);
+    color: var(--text-main);
+    font-weight: bold;
+}
+.visBio {
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    transform: translateY(21vh);
+    color: var(--text-muted);
+}
+
+.visSocials{
+    position: absolute;
+    left: 0;
+    transform: translateY(60vh) translateX(450%);
+}
