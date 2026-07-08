@@ -153,3 +153,90 @@
     left: 0;
     transform: translateY(60vh) translateX(450%);
 }
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 28px;
+  margin-bottom: 80px;
+  
+}
+.eventCard {
+  position: relative;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  height: 25vh;
+  padding: 36px 28px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.eventImg img{
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    transform: translateX(-137%) translateY(-10%);
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.eventSec{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.eventSecTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  transform: translateY(20%);
+}
+
+.eventSecSubtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transform: translateY(20%);
+}
+
+.eventDetails{
+    position: absolute;
+    width: 55%;
+    height: 80%;
+    top:10%;
+    left: 40%;
+}
+.eveName{
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 1.5rem;  
+    color: var(--text-main);
+    
+}
+.eveDate{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    position: absolute;
+    font-size: 1rem;  
+    color: var(--text-muted);
+    
+}
+.eveInfo{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    position: absolute;
+    font-size: 0.9rem;  
+    color: var(--text-muted);
+    text-align: left;
+}

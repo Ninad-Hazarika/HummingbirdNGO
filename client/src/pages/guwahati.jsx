@@ -68,6 +68,30 @@ export default function Guwahati(){
     },
   ];
 
+  const events = [
+    {
+      id: 1,
+      name: "Event 1",
+      date: "2023-10-15",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      id: 2,
+      name: "Event 2",
+      date: "2023-11-20",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      id: 3,
+      name: "Event 3",
+      date: "2023-12-15",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",    
+    }
+  ];
+
     return(
        <div className={styles.pageWrapper}>
              <div className={styles.container}>
@@ -121,6 +145,33 @@ export default function Guwahati(){
                          <span>🌐</span>
                          <span>✉️</span>
                        </div>
+                     </div>
+                   ))}
+                 </div>
+
+                 <div className={styles.eventSec}>
+                   <div>
+                     <h2 className={styles.eventSecTitle}>Events</h2>
+                     <p className={styles.eventSecSubtitle}>
+                       Architecting the long-term blueprint for sustainable global impact and
+                       innovation.
+                     </p>
+                   </div>
+                 </div>
+
+                 <div className={styles.eventGrid}>
+                   {events.map((member) => (
+                     <div key={member.id} className={styles.eventCard} onClick={()=> navigate(member.path || "/")}>
+                       <div>
+                            <div className={styles.eventImg}>
+                            <img src={member.image} alt={member.name} />
+                            </div>
+                            <div className={styles.eventDetails}>
+                                <p className={styles.eveName}>{member.name}</p>
+                                <p className={styles.eveDate}>{member.date}</p>
+                                <p className={styles.eveInfo}>{member.info}</p>
+                            </div>
+                        </div>
                      </div>
                    ))}
                  </div>
