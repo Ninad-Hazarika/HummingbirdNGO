@@ -4,6 +4,65 @@ import { useNavigate } from "react-router-dom";
 
 function ProgramResearch() {
   const navigate = useNavigate();
+
+  const chief = [
+    {
+      id: 1,
+      name: "Jitisha",
+      role: "Wing A Director",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      age: "21",
+      quote: "With 20 years in international development, Elena crafts our overarching operational framework to ensure scalability and critical growth.",
+      serving_since: "21 july 2022",
+      bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      achievements:[
+        {
+            title: "Achievement 1",
+            year: "2022",
+        },
+        {
+            title: "Achievement 2",
+            year: "2023",
+        }
+      ],
+      qualifications: [
+        {
+            qual: "Qualification 1",
+            year: "2020",
+        },
+        {
+            qual: "Qualification 2",
+            year: "2021",
+        }
+      ] ,
+    },
+    
+  ];
+
+  const events = [
+    {
+      id: 1,
+      name: "Event 1",
+      date: "2023-10-15",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      id: 2,
+      name: "Event 2",
+      date: "2023-11-20",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      id: 3,
+      name: "Event 3",
+      date: "2023-12-15",
+      info: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",    
+    }
+  ];
+
   const directors = [
     {
       id: 1,
@@ -78,6 +137,47 @@ function ProgramResearch() {
           </p>
         </div>
 
+        <div className={styles.chiefGrid}>
+          {chief.map((member) => (
+            <div key={member.id} className={styles.chiefCard} onClick={()=> navigate(member.path || "/")}>
+              <div>
+              <div className={styles.chiefAvatarRingWrapper} onClick={()=> navigate(member.path || "/")}>
+                  <img src={member.image} alt={member.name} />
+              </div>
+              <p className={styles.chiefRole}>{member.role}</p>
+              <p className={styles.chiefQuote}>{member.quote}</p>
+              <div className={styles.chiefKeep}>
+                  <h3 className={styles.chiefName}>{member.name}</h3>
+                  <p className={styles.chiefAge}>Age: {member.age}</p>
+                  <p className={styles.chiefServingSince}>Serving Since: {member.serving_since}</p>
+                  <div className={styles.chiefQualifications}>
+                          <h4>Qualifications:</h4>
+                          <div className={styles.qualificationList}>
+                              {member.qualifications.map((qualification, index) => (
+                                  <li key={index}>{qualification.qual} ({qualification.year})</li>
+                              ))}
+                          </div>
+                  </div>
+                  <div className={styles.chiefAchievements}>
+                          <h4>Achievements:</h4>
+                          <div className={styles.achievementList}>
+                              {member.achievements.map((achievement, index) => (
+                                  <li key={index}>{achievement.title} ({achievement.year})</li>
+                              ))}
+                          </div>
+                  </div>
+                  <p className={styles.chiefBio1}>Bio:</p>
+                  <p className={styles.chiefBio}>{member.bio}</p>
+              </div>
+                  
+              </div>
+              <div className={styles.chiefSocials}>
+                <span>🌐</span>
+                <span>✉️</span>
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Strategic Visionaries */}
         <div className={styles.teamSec}>

@@ -20,6 +20,9 @@ import ProgramResearch from "./pages/Program_research";
 import RegionalCircles from "./pages/Regional_circles";
 import CollegeUnits from "./pages/College_units";
 import CoreAdmin from "./pages/Core_admin";
+import Guwahati from "./pages/guwahati";
+import Barpeta from "./pages/barpeta";
+import BarpetaRoad from "./pages/barpetaRoad";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
           <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
           <Route path="/team/program_research" element={<ProgramResearch />} />
           <Route path="/team/regional_circles" element={<RegionalCircles />} />
+            <Route path="/team/regional_circles/guwahati" element={<Guwahati />} />
+            <Route path="/team/regional_circles/barpeta" element={<Barpeta />} />
+            <Route path="/team/regional_circles/barpeta_road" element={<BarpetaRoad />} />
           <Route path="/team/college_units" element={<CollegeUnits />} />
           <Route path="/team/core_admin" element={<CoreAdmin />} />
         </Routes>
