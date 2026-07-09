@@ -1,0 +1,40 @@
+.impact-carousel{
+    padding:100px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading h2{
+    font-size:3rem;
+    margin-bottom:16px;
+}
+
+.section-heading p{
+    color:#64748b;
+    max-width:650px;
+    margin:auto;
+}
+
+.impact-carousel .swiper{
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+}
+
+.impact-carousel img{
+    width:100%;
+    height:650px;
+    object-fit:cover;
+}
+
+.swiper-pagination-bullet{
+    background:white;
+    opacity:.6;
+}
+
+.swiper-pagination-bullet-active{
+    background:#00c4df;
+}
