@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import ImpactCarousel from "../components/ImpactCarousel";
 import Stats from "../components/Stats";
 import Philosophy from "../components/Philosophy";
 import GlobalPresence from "../components/GlobalPresence";
@@ -8,6 +9,7 @@ function Home() {
   return (
     <div className="page-wrapper">
       <Hero />
+      <ImpactCarousel />
       <Stats />
       <Philosophy />
       <GlobalPresence />

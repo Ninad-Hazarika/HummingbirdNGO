@@ -1,7 +1,13 @@
 import "./Hero.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 
 function Hero() {
-  return (
+    return (
     <section className="hero-section">
       <div className="container hero-grid">
         <div className="hero-left">
@@ -31,20 +37,40 @@ function Hero() {
         <div className="hero-right">
           <div className="hero-card">
             <div className="hero-card-image-wrapper">
-              <img
-                src="/hummingbird-hero.jpg"
-                alt="Hummingbird in flight"
-                className="hero-card-image"
-              />
-            </div>
-            <div className="hero-card-stats">
-              <div className="stat-item">
-                <span className="stat-label">Global Reach</span>
-                <span className="stat-value">24+ Countries</span>
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+                className="hero-swiper"
+              >
+                <SwiperSlide>
+                  <img src="/hummingbird-hero.jpg" alt="Hummingbird" className="hero-card-image" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src="/education.jpg" alt="Education" className="hero-card-image" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src="/healthcare.jpg" alt="Healthcare" className="hero-card-image" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src="/environment.jpg" alt="Environment" className="hero-card-image" />
+                </SwiperSlide>
+              </Swiper>
+              <div className="floating-stat stat-top">
+                <h2>24+</h2>
+                <p>Countries</p>
               </div>
-              <div className="stat-item">
-                <span className="stat-label">Active Missions</span>
-                <span className="stat-value">152 Active</span>
+              <div className="floating-stat stat-bottom">
+                <h2>152</h2>
+                <p>Active Missions</p>
               </div>
             </div>
           </div>
