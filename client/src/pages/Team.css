@@ -203,71 +203,7 @@
 }
 
 /* Join Collective Card */
-.join-collective-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 255, 0.9));
-  border-radius: var(--radius-lg);
-  padding: 48px;
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-md);
-}
 
-.jc-title {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 12px;
-}
-
-.jc-desc {
-  font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 32px;
-}
-
-.jc-progress-box {
-  max-width: 500px;
-  margin: 0 auto 32px;
-}
-
-.jc-progress-labels {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: #0284c7;
-  margin-bottom: 8px;
-}
-
-.jc-progress-bar {
-  height: 8px;
-  background: var(--bg-card-alt);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.jc-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #00c4df, #2563eb);
-}
-
-.btn-careers {
-  background: #091e2a;
-  color: #ffffff;
-  font-size: 0.88rem;
-  font-weight: 800;
-  padding: 14px 36px;
-  border-radius: var(--radius-full);
-  letter-spacing: 0.04em;
-  transition: all 0.2s ease;
-}
-
-.btn-careers:hover {
-  background: #1a3245;
-  transform: translateY(-2px);
-}
 
 @media (max-width: 992px) {
   .visionaries-grid {
