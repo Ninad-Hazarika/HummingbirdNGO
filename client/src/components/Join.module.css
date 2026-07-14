@@ -10,7 +10,7 @@
   text-align: center;
 }
     .expanded{
-        height: 40vh;
+      height: 50vh;
     }
     .Content {    
     display: grid;
@@ -98,9 +98,9 @@
 
 .name {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 5%;
-    height: 8%;
+    height: 7%;
     width: 40%;
     padding: 10px;
     border-radius: 12px;
@@ -108,25 +108,25 @@
 }
 .number {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 55%;
-    height: 8%;
+    height: 7%;
     width: 40%;
     padding: 10px;
     border-radius: 12px;
 }
 .email {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 5%;
-    height: 8%;
+    height: 7%;
     width: 60%;
     padding: 10px;
     border-radius: 12px;
 }
 .branchTitle{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 7%;
     font-size: 1.3rem;
     font-weight: 600;
@@ -134,7 +134,7 @@
 
 .RND{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 7%;
     z-index: 999;
 }
@@ -152,7 +152,7 @@
   
 .Tech{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 35%;
     z-index: 999;
 }
@@ -169,7 +169,7 @@
   }
 .PR{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 46%;
 }
   .PR:hover .text{
@@ -185,7 +185,7 @@
   }
 .Volunteer{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 65%;
 }
   .Volunteer:hover .text{
@@ -211,14 +211,14 @@
 
 .RegionTitle{
     position: absolute;
-    top: 73%;
+    top: 65%;
     left: 7%;
     font-size: 1.3rem;
     font-weight: 600;
 }
     .Guwahati{
     position: absolute;
-    top: 77%;
+    top: 70%;
     left: 7%;
     }
       .Guwahati:hover .text{
@@ -234,7 +234,7 @@
   }
     .Barpeta{
         position: absolute;
-        top: 77%;
+        top: 70%;
         left: 23%;
     }
       .Barpeta:hover .text{
@@ -250,7 +250,7 @@
   }
     .BarpetaRoad{
         position: absolute;
-        top: 77%;
+        top: 70%;
         left: 37%;
     }
       .BarpetaRoad:hover .text{
@@ -263,4 +263,22 @@
     border: #022c96 1px solid;
     cursor: pointer;
     color: white;
+  }
+
+.submitBtn{
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  height: 8%;
+  width: 20%;
+  background-color: #003fdf;
+  border: #022c96 1px solid;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+  .submitBtn:active{
+    background-color: #0032b0;
+    border: #001e69 1px solid;
   }

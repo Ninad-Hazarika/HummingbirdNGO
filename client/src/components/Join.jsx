@@ -54,6 +54,8 @@ export default function JoinButton () {
                     <input type="radio" name="Region" value="PR" className={styles.inp}/>
                     <div className={styles.text}>Barpeta Road</div>
                </label>
+
+               <button className={styles.submitBtn} onClick={() => setOpen(!open)}>Submit</button>
             </div>
         </div>
         </>
