@@ -1,0 +1,284 @@
+.joinCollective {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 255, 0.9));
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  max-width: 780px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+    .expanded{
+      height: 50vh;
+    }
+    .Content {    
+    display: grid;
+    grid-template-rows: auto;
+
+    overflow: hidden;
+    transition: all 0.5s ease;
+    }
+  .joinForm{
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+  }
+  .joinForm.show{
+    opacity: 1;
+    transition: all 0.3s ease;
+    height: 50vh;
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    max-width: 780px;
+    margin: 0 auto;
+    pointer-events: auto;
+  }
+
+.jcTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.jcDesc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  pointer-events: none;
+}
+
+.jcProgressLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0284c7;
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.btnCareers {
+  opacity: 1;
+  background: #091e2a;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  padding: 14px 36px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.04em;
+  transition: all 1s ease;
+}
+.buttonWrapper {
+  opacity: 1;
+  transition: all 1s ease;
+}
+  .buttonWrapper.hide {
+  opacity: 0;
+  max-height: 0;
+  transition: all 1s ease;
+  overflow: hidden;
+  }
+
+.btnCareers:hover {
+  background: #1a3245;
+  transform: translateY(-2px);
+}
+
+.Intro{
+    position: absolute;
+    transform: translateY(-200%) translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.name {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 7%;
+    width: 40%;
+    padding: 10px;
+    border-radius: 12px;
+    z-index: 999;
+}
+.number {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    height: 7%;
+    width: 40%;
+    padding: 10px;
+    border-radius: 12px;
+}
+.email {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 7%;
+    width: 60%;
+    padding: 10px;
+    border-radius: 12px;
+}
+.branchTitle{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.RND{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    z-index: 999;
+}
+  .RND:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .RND input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+  
+.Tech{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 999;
+}
+  .Tech:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .Tech input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+.PR{
+    position: absolute;
+    top: 50%;
+    left: 46%;
+}
+  .PR:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .PR input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+.Volunteer{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+  .Volunteer:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .Volunteer input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+    .inp{
+        appearance: none;
+    }
+    .text{
+        border: grey 1px solid;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+.RegionTitle{
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+    .Guwahati{
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    }
+      .Guwahati:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .Guwahati input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+    .Barpeta{
+        position: absolute;
+        top: 70%;
+        left: 23%;
+    }
+      .Barpeta:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .Barpeta input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+    .BarpetaRoad{
+        position: absolute;
+        top: 70%;
+        left: 37%;
+    }
+      .BarpetaRoad:hover .text{
+    background-color: #00c4df;
+    border: #02a7bd 1px solid;
+    cursor: pointer;
+  }
+  .BarpetaRoad input:checked + .text{
+    background-color: #003fdf;
+    border: #022c96 1px solid;
+    cursor: pointer;
+    color: white;
+  }
+
+.submitBtn{
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  height: 8%;
+  width: 20%;
+  background-color: #003fdf;
+  border: #022c96 1px solid;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+  .submitBtn:active{
+    background-color: #0032b0;
+    border: #001e69 1px solid;
+  }

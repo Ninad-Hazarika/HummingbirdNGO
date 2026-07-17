@@ -1,9 +1,13 @@
 import TeamOrgChart from "../components/TeamOrgChart";
 import "./Team.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";   
+
+import JoinButton from "../components/Join.jsx"
 
 function Team() {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
   const visionaries = [
     {
       id: 1,
@@ -92,23 +96,7 @@ function Team() {
         
 
         {/* Join the Collective */}
-        <div className="join-collective-card">
-          <h2 className="jc-title">Join the Collective</h2>
-          <p className="jc-desc">
-            We're always looking for brilliant minds to join our mission. Our deployment
-            rate is currently at peak capacity.
-          </p>
-          <div className="jc-progress-box">
-            <div className="jc-progress-labels">
-              <span>Current Mission Capacity</span>
-              <span>94%</span>
-            </div>
-            <div className="jc-progress-bar">
-              <div className="jc-progress-fill" style={{ width: "94%" }}></div>
-            </div>
-          </div>
-          <button className="btn-careers">VIEW CAREER OPENINGS</button>
-        </div>
+        <JoinButton/>
       </div>
     </div>
   );
